@@ -33,6 +33,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryResponseDto create(CategoryRequestDto dto) {
         Category category = CategoryMapper.toEntity(dto);
+
         if (category.getProducts() == null) {
             category.setProducts(new ArrayList<>());
         }
