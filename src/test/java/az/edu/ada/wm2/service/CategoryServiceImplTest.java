@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class CategoryServiceImpl implements CategoryService {
+class CategoryServiceImpl implements CategoryService {
 
     private final CategoryRepository categoryRepository;
     private final ProductRepository productRepository;
